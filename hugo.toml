@@ -1,0 +1,43 @@
+baseURL = "https://hugotex.pages.dev/"
+title = "Andro's Blog"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+theme = 'HugoTeX'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[pagination]
+  pagerSize = 3
+
+[Params.author]
+  name = "Andro"
+  abstract = """
+  I'm a human being, first and foremost. I like videogames, philosophy and software.
+  Also a programmer, sometimes artist, writer, a bit of everything. 
+  I'm somewhat fixated on SIGINT and OSINT.
+  """
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          inline = [['$', '$']]
+          block = [['$$', '$$']]
+  [markup.highlight]
+    style = "paraiso-dark"
+
+[Params]
+  darkmode = true
