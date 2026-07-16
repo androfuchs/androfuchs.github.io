@@ -6,10 +6,6 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 theme = 'HugoTeX'
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
 [pagination]
   pagerSize = 3
 
